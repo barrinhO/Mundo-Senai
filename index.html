@@ -1,27 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Projetos-MS</title>
+    <title>Projetos - MS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1e1e2f;
+        color: #f0f0f0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px #00000055;
+      }
+
+      .projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .projeto-link {
+        display: block;
+        text-align: center;
+        padding: 1rem 2rem;
+        background-color: #6c63ff;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .projeto-link:hover {
+        background-color: #5751d6;
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        .projeto-link {
+          font-size: 1rem;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Nossos Projetos</h1>
-    <div class="container">
-      <div class="projetos">
-        <a href="https://meus-projetos-phi.vercel.app/" target="_blank">
-          <label for="">Projetos - Christian</label>
-        </a>
+    <h1>Projetos Desenvolvidos</h1>
 
-        <a href="" target="_blank">
-          <label for="">Projetos - Lucas</label>
-        </a>
+    <div class="projetos">
+      <a
+        href="https://meus-projetos-phi.vercel.app/"
+        target="_blank"
+        class="projeto-link"
+      >
+        Projetos - Christian
+      </a>
 
-        <a href="" target="_blank">
-          <label for="">Projetos - João</label>
-        </a>
-      </div>
+      <a href="#" target="_blank" class="projeto-link"> Projetos - Lucas </a>
+
+      <a href="#" target="_blank" class="projeto-link"> Projetos - João </a>
+
+      <!-- Lucas e João ainda não enviaram seus projetos, façam o favor de colocar o
+      link da página de projetos de vocês ali em cima, ok? 😄
+      só mexam no HREF por favor. -->
     </div>
   </body>
 </html>
